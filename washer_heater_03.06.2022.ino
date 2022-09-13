@@ -25,8 +25,8 @@ void setup()
   Wire.onRequest(requestEvent); //Prepare to send data
   Wire.onReceive(receiveEvent); //Prepare to recieve data
   pinMode(buzzer, OUTPUT); // Set buzzer - pin 9 as an output
-  pinMode(sen_plug, INPUT_PULLUP);
-  pinMode(sen, INPUT_PULLUP);  
+  pinMode(sen_plug, INPUT);
+  pinMode(sen, INPUT);  
   Serial.begin(9600);
 }
 
